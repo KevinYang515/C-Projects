@@ -24,6 +24,7 @@ int lengthOfLongestSubstring(string s) {
     for (int i = 0, j = 0; j < s.length(); j ++){
         if (my_map.find(str[j]) != my_map.end()){
             i = max(i, my_map.find(str[j])->second);
+            // i = max(i, my_map[str[j]]);
         }
         ans = max(ans, j - i + 1);
         my_map[str[j]] = j + 1;
