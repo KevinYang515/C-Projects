@@ -13,6 +13,8 @@ int main() {
     for (string s_temp : s){
         printf("%d, ", lengthOfLongestSubstring(s_temp));
     }
+
+    return 0;
 }
 
 int lengthOfLongestSubstring(string s) {

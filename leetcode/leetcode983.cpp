@@ -8,17 +8,18 @@ using namespace std;
 int mincostTickets(vector<int>& days, vector<int>& costs);
 
 int main(){
-    vector<vector<int>> days = {{1,4,6,7,8,20}, {1,2,3,4,5,6,7,8,9,10,30,31}};
-    vector<vector<int>> costs = {{2,7,15}, {2,7,15}};
+    vector<vector<int>> days = {{1,4,6,7,8,20}, {1,2,3,4,5,6,7,8,9,10,30,31}, {1,4,6,7,8,365}};
+    vector<vector<int>> costs = {{2,7,15}, {2,7,15}, {2,7,15}};
 
     printf("%d \n", mincostTickets(days.at(0), costs.at(0)));
     printf("%d \n", mincostTickets(days.at(1), costs[1]));
+    printf("%d \n", mincostTickets(days.at(2), costs[2]));
 
     return 0;
 }
 
 int mincostTickets(vector<int>& days, vector<int>& costs) {
-    vector<int> dp(365, INT_MAX);
+    vector<int> dp(366, INT_MAX);
     for (int day : days){
         dp[day] = 0;
     }
