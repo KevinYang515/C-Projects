@@ -21,6 +21,8 @@ int main() {
     return 0;
 }
 
+// Time Complexity: O(n^(k - 1)) (e.g., 4Sum: O(n^3), 2Sum:O(n))
+// Space Complexity: O(1)
 vector<vector<int>> fourSum(vector<int>& nums, int target) {
     vector<vector<int>> result;
     if (nums.empty() || nums.size() < 4) return result;
