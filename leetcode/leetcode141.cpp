@@ -20,6 +20,8 @@ int main(){
     return 0;
 }
 
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 bool hasCycle(ListNode *head) {
     if (head == NULL || head->next == NULL) return false;
     ListNode* slow = head;
