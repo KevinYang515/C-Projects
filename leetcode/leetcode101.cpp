@@ -15,13 +15,15 @@ int main(){
     for (TreeNode* root : root_v){
         printf("%s, ", isSymmetric_r(root)?"true":"false");
     }
+
+    return 0;
 }
 
 // Recursive
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 bool isSymmetric_r(TreeNode* root) {
-    helper_r(root, root);
+    return helper_r(root, root);
 }
 
 bool helper_r(TreeNode* left, TreeNode* right){
