@@ -22,7 +22,7 @@ int main(){
 }
 
 vector<vector<int>> permute(vector<int>& nums) {
-    vector<vector<int>> result
+    vector<vector<int>> result;
     if (nums.empty()) result;
     vector<int> current;
     permute_helper(nums, 0, current, result);
