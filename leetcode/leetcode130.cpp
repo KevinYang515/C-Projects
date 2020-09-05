@@ -23,7 +23,8 @@ int main(){
 }
 
 int length = 0, width = 0;
-
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 void solve(vector<vector<char>>& board) {
     if (board.size() == 0) return;
     length = board.size();
